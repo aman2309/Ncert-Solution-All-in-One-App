@@ -3,7 +3,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import '../Custom/CustomContainer.dart';
+import '../core/theme/color.dart';
+import '../widgets/CustomContainer.dart';
+import '../widgets/custom_app_bar.dart';
 import 'classes/Class 10/class10.dart';
 import 'classes/Class3/class3.dart';
 import 'classes/class11.dart';
@@ -16,14 +18,14 @@ import 'classes/class8.dart';
 import 'classes/class9.dart';
 
 
-class Classes extends StatefulWidget {
-  const Classes({Key? key}) : super(key: key);
+class ClassScreen extends StatefulWidget {
+  const ClassScreen({super.key});
 
   @override
-  State<Classes> createState() => _ClassesState();
+  State<ClassScreen> createState() => _ClassScreenState();
 }
 
-class _ClassesState extends State<Classes> {
+class _ClassScreenState extends State<ClassScreen> {
   double height = 0.14;
   double width = 0.42;
   double topPadding = 15;
@@ -47,13 +49,13 @@ class _ClassesState extends State<Classes> {
 
   @override
   Widget build(BuildContext context) {
-    var Size = MediaQuery.of(context).size;
+    var size = MediaQuery.of(context).size;
     return Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          backgroundColor: Colors.cyan,
-          centerTitle: true,
-          title: const Text("Ncert Solutions", style: TextStyle(fontSize: 18)),
+        appBar: const CustomAppBar(
+          title: "Ncert Solutions",
+          backgroundColor: AppColors.cyan,
+          showBackButton: true,
         ),
         body: Center(
           child: isLoading
@@ -86,8 +88,8 @@ class _ClassesState extends State<Classes> {
                                   MaterialPageRoute(
                                       builder: (context) => const Class12()));
                             },
-                            height: Size.height * height,
-                            width: Size.width * width,
+                            height: size.height * height,
+                            width: size.width * width,
                             image: "assets/images/12.png",
                             text: "Class 12",
                           ),
@@ -98,8 +100,8 @@ class _ClassesState extends State<Classes> {
                                   MaterialPageRoute(
                                       builder: (context) => const Class11()));
                             },
-                            height: Size.height * height,
-                            width: Size.width * width,
+                            height: size.height * height,
+                            width: size.width * width,
                             image: "assets/images/11.png",
                             text: "Class 11",
                           ),
@@ -118,8 +120,8 @@ class _ClassesState extends State<Classes> {
                                           builder: (context) =>
                                               const Class10()));
                                 },
-                                height: Size.height * height,
-                                width: Size.width * width,
+                                height: size.height * height,
+                                width: size.width * width,
                                 image: "assets/images/10.png",
                                 text: "Class 10",
                               ),
@@ -131,8 +133,8 @@ class _ClassesState extends State<Classes> {
                                           builder: (context) =>
                                               const Class9()));
                                 },
-                                height: Size.height * height,
-                                width: Size.width * width,
+                                height: size.height * height,
+                                width: size.width * width,
                                 image: "assets/images/9.png",
                                 text: "Class 9",
                               ),
@@ -153,8 +155,8 @@ class _ClassesState extends State<Classes> {
                                           builder: (context) =>
                                               const Class8()));
                                 },
-                                height: Size.height * height,
-                                width: Size.width * width,
+                                height: size.height * height,
+                                width: size.width * width,
                                 image: "assets/images/8.png",
                                 text: "Class 8",
                               ),
@@ -166,8 +168,8 @@ class _ClassesState extends State<Classes> {
                                           builder: (context) =>
                                               const Class7()));
                                 },
-                                height: Size.height * height,
-                                width: Size.width * width,
+                                height: size.height * height,
+                                width: size.width * width,
                                 image: "assets/images/7.png",
                                 text: "Class 7",
                               ),
@@ -188,8 +190,8 @@ class _ClassesState extends State<Classes> {
                                           builder: (context) =>
                                               const Class6()));
                                 },
-                                height: Size.height * height,
-                                width: Size.width * width,
+                                height: size.height * height,
+                                width: size.width * width,
                                 image: "assets/images/6.png",
                                 text: "Class 6",
                               ),
@@ -201,8 +203,8 @@ class _ClassesState extends State<Classes> {
                                           builder: (context) =>
                                               const Class5()));
                                 },
-                                height: Size.height * height,
-                                width: Size.width * width,
+                                height: size.height * height,
+                                width: size.width * width,
                                 image: "assets/images/5.png",
                                 text: "Class 5",
                               ),
@@ -223,8 +225,8 @@ class _ClassesState extends State<Classes> {
                                           builder: (context) =>
                                               const Class4()));
                                 },
-                                height: Size.height * height,
-                                width: Size.width * width,
+                                height: size.height * height,
+                                width: size.width * width,
                                 image: "assets/images/4.png",
                                 text: "Class 4",
                               ),
@@ -236,8 +238,8 @@ class _ClassesState extends State<Classes> {
                                           builder: (context) =>
                                               const Class3()));
                                 },
-                                height: Size.height * height,
-                                width: Size.width * width,
+                                height: size.height * height,
+                                width: size.width * width,
                                 image: "assets/images/3.png",
                                 text: "Class 3",
                               ),

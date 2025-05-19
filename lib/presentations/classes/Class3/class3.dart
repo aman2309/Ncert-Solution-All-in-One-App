@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../Custom/CustomContainer.dart';
+import '../../../widgets/CustomContainer.dart';
 import 'ChaptersENG.dart';
 import 'ChaptersEnvironmental.dart';
 import 'ChaptersHINDI.dart';

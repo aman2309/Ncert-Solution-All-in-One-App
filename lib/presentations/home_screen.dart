@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:ncert_app/core/theme/color.dart';
+import 'package:ncert_app/routes/app_routes.dart';
 
-import '../Custom/CustomContainer.dart';
-import '../Custom/CustomDrawer.dart';
+
 import '../core/theme/my_fonts.dart';
+import '../widgets/CustomContainer.dart';
+import '../widgets/CustomDrawer.dart';
 import 'classes_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -24,10 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
         'text': 'Ncert Solutions',
         'image': 'assets/images/ncert.png',
         'onTap': (BuildContext context) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const Classes()),
-          );
+          Navigator.pushNamed(context, AppRoutes.classScreen);
         }
       },
       {
@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       drawer: const Customdrawer(
         background: Colors.cyan,
         drawerName: "Ncert & Refrence Books Solutions",
@@ -101,9 +101,14 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       appBar: AppBar(
         backgroundColor: Colors.cyan,
-        actions: const [
-          Icon(Icons.notifications),
-          SizedBox(width: 15),
+        actions: [
+          GestureDetector(
+            onTap: (){
+              Navigator.pushNamed(context, AppRoutes.notifications);
+            },
+
+              child: Icon(Icons.notifications_active_outlined)),
+          const SizedBox(width: 15),
         ],
         toolbarHeight: 60,
         centerTitle: true,

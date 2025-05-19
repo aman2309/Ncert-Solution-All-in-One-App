@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ncert_app/core/theme/my_fonts.dart';
 
 import '../core/theme/color.dart';
+import '../routes/app_routes.dart';
 import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -30,10 +31,8 @@ class _SplashScreenState extends State<SplashScreen>
     _controller.forward();
 
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (_) => const HomeScreen()),
-      );
+      Navigator.pushNamed(context, AppRoutes.homeScreen);
+
     });
   }
 

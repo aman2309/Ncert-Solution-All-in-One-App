@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../Custom/CustomContainer.dart';
+import '../../../widgets/CustomContainer.dart';
 import 'Class10Maths.dart';
 
 class Class10 extends StatefulWidget {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../Custom/CustomContainer.dart';
+import '../../widgets/CustomContainer.dart';
+
 
 class Class6 extends StatefulWidget {
   const Class6({Key? key}) : super(key: key);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../Custom/CustomContainer.dart';
+import '../../widgets/CustomContainer.dart';
+
 
 
 class Class12 extends StatefulWidget {
