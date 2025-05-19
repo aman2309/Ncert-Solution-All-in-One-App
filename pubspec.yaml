@@ -1,0 +1,57 @@
+name: ncert_app
+description: "A new Flutter project to display NCERT notes."
+
+publish_to: 'none' # Prevents accidental publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase core and Firestore for online data
+#  firebase_core: ^2.27.0
+#  cloud_firestore: ^4.15.0
+
+  # State management
+  provider: ^6.1.2
+
+  # UI/UX helpers
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.9
+
+  # HTTP for fetching from REST APIs (optional)
+  http: ^1.2.1
+
+  # JSON helpers
+#  json_annotation: ^4.8.1
+
+  # File loading, local storage
+  path_provider: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.8
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+
+  # Define the assets you want to include in your app
+  assets:
+    - assets/images/
+    - assets/notes/
+
+  # Optional: You can also specify custom fonts
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       - asset: fonts/Roboto-Bold.ttf
+  #         weight: 700
