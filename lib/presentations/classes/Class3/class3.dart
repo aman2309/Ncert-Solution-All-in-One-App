@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
 
-import '../Custom/CustomContainer.dart';
+import '../../../Custom/CustomContainer.dart';
+import 'ChaptersENG.dart';
+import 'ChaptersEnvironmental.dart';
+import 'ChaptersHINDI.dart';
+import 'ChaptersMATH.dart';
 
-class Class4 extends StatefulWidget {
-  const Class4({Key? key}) : super(key: key);
+class Class3 extends StatefulWidget {
+  const Class3({Key? key}) : super(key: key);
 
   @override
-  State<Class4> createState() => _Class4State();
+  State<Class3> createState() => _Class3State();
 }
 
-class _Class4State extends State<Class4> {
+class _Class3State extends State<Class3> {
   double height = 0.14;
   double width = 0.42;
   double topPadding = 15;
   double leftPadding = 20;
   Color backgroundColor = Colors.white;
-  Color appBarColor = Colors.purple;
-  final String _appbarTitle = "Class 4";
+  Color appBarColor = Colors.deepPurple;
+  final String _appbarTitle = "Class 3";
 
   @override
   Widget build(BuildContext context) {
@@ -36,14 +40,24 @@ class _Class4State extends State<Class4> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               CustomContainer(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ChaptersEnvironmental()));
+                },
                 height: size.height * height,
                 width: size.width * width,
                 image: "assets/images/env.png",
                 text: "Environmental",
               ),
               CustomContainer(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ChaptersHINDI()));
+                },
                 height: size.height * height,
                 width: size.width * width,
                 image: "assets/images/hindi.png",
@@ -58,14 +72,20 @@ class _Class4State extends State<Class4> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               CustomContainer(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ChaptersENG()));
+                },
                 height: size.height * height,
                 width: size.width * width,
                 image: "assets/images/english.png",
                 text: "English",
               ),
               CustomContainer(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ChaptersMATH()));
+                },
                 height: size.height * height,
                 width: size.width * width,
                 image: "assets/images/math.png",

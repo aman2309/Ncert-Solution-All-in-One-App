@@ -1,25 +1,27 @@
 import 'package:flutter/material.dart';
 
-import '../../Custom/CustomChapterContainer.dart';
+import '../../../Custom/CustomChapterContainer.dart';
 
-class ChaptersENG extends StatefulWidget {
+
+class Class10Maths extends StatefulWidget {
+  const Class10Maths({Key? key}) : super(key: key);
+
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return ChaptersENGState();
-  }
+  State<Class10Maths> createState() => _Class10MathsState();
 }
 
-class ChaptersENGState extends State<ChaptersENG> {
+class _Class10MathsState extends State<Class10Maths> {
+  final double _height = 120;
+  final double _width = 850;
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold(
-        resizeToAvoidBottomInset: false,
+    return
+      Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.cyan,
+          backgroundColor: const Color(0xff8f27c7),
           centerTitle: true,
-          title: const Text("Chapters"),
+          title: const Text("Maths"),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -27,99 +29,99 @@ class ChaptersENGState extends State<ChaptersENG> {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Real Numbers",
+                    unitName: "Chapter 1-",
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Polynomials",
+                    unitName: "Chapter 2-",
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Pair of Linear Equations in \n Two Variables",
+                    unitName: "Chapter 3-",
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Quadratic Equations",
+                    unitName: "Chapter 4-",
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Arithmetic Progressions",
+                    unitName: "Chapter 5-",
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Triangles",
+                    unitName: "Chapter 6-",
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Coordinate Geometry",
+                    unitName: "Chapter 7-",
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Introduction to Trigonometry",
+                    unitName: "Chapter 8-",
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 14),
                 child: SizedBox(
-                  height: 112,
-                  width: 850,
+                  height: _height,
+                  width: _width,
                   child: const CustomChapterContainer(
-                    unitName: 'Unit 1',
-                    chapterName: 'Good Morning',
+                    chapterName: "Some Applications of Trigonometry",
+                    unitName: "Chapter 9-",
                   ),
                 ),
               ),

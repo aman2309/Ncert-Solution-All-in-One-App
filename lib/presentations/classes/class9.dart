@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 
-import '../Custom/CustomContainer.dart';
+import '../../Custom/CustomContainer.dart';
 
-class Class5 extends StatefulWidget {
-  const Class5({Key? key}) : super(key: key);
+
+class Class9 extends StatefulWidget {
+  const Class9({Key? key}) : super(key: key);
 
   @override
-  State<Class5> createState() => _Class5State();
+  State<Class9> createState() => _Class9State();
 }
 
-class _Class5State extends State<Class5> {
+class _Class9State extends State<Class9> {
   double height = 110;
   double width = 180;
+
   Color backgroundColor = Colors.white;
-  Color appBarColor = Colors.pink;
-  final String _appbarTitle = "Class 5";
+  Color appBarColor = Color(0xff801c8d);
+  final String _appbarTitle = "Class 9";
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class _Class5State extends State<Class5> {
           title: Text(_appbarTitle, style: const TextStyle(fontSize: 18)),
         ),
         body: Padding(
-          padding: const EdgeInsets.only(top: 20, left: 5),
+          padding: const EdgeInsets.only(top: 20),
           child: Column(children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -91,6 +93,24 @@ class _Class5State extends State<Class5> {
                           width: width,
                           image: "assets/images/tr.png",
                           text: "Social Studies",
+                          onTap: () {})
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CustomContainer(
+                          height: height,
+                          width: width,
+                          image: "assets/images/pro.png",
+                          text: "Computer",
                           onTap: () {})
                     ],
                   )

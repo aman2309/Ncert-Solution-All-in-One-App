@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ncert_app/presentations/splash_screen.dart';
 
-import 'Pages/home_screen.dart';
 
 Future<void> main() async {
   
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
          ThemeMode.dark for dark theme
       */
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }

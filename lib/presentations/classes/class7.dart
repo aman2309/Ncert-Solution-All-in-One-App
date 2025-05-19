@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
 import '../../Custom/CustomContainer.dart';
-import 'Class10Maths.dart';
 
-class Class10 extends StatefulWidget {
-  const Class10({Key? key}) : super(key: key);
+
+class Class7 extends StatefulWidget {
+  const Class7({Key? key}) : super(key: key);
 
   @override
-  State<Class10> createState() => _Class10State();
+  State<Class7> createState() => _Class7State();
 }
 
-class _Class10State extends State<Class10> {
+class _Class7State extends State<Class7> {
   double height = 110;
   double width = 180;
 
   Color backgroundColor = Colors.white;
-  Color appBarColor = Color(0xff801c8d);
-  final String _appbarTitle = "Class 10";
+  Color appBarColor = Color(0xff43abab);
+  final String _appbarTitle = "Class 7";
 
   @override
   Widget build(BuildContext context) {
@@ -64,12 +64,7 @@ class _Class10State extends State<Class10> {
                         text: "English",
                       ),
                       CustomContainer(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Class10Maths()));
-                        },
+                        onTap: () {},
                         height: height,
                         width: width,
                         image: "assets/images/math.png",
@@ -98,24 +93,6 @@ class _Class10State extends State<Class10> {
                           width: width,
                           image: "assets/images/tr.png",
                           text: "Social Studies",
-                          onTap: () {})
-                    ],
-                  )
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      CustomContainer(
-                          height: height,
-                          width: width,
-                          image: "assets/images/pro.png",
-                          text: "Computer",
                           onTap: () {})
                     ],
                   )

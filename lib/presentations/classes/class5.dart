@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-import '../Custom/CustomContainer.dart';
+import '../../Custom/CustomContainer.dart';
 
-class Class7 extends StatefulWidget {
-  const Class7({Key? key}) : super(key: key);
+
+class Class5 extends StatefulWidget {
+  const Class5({Key? key}) : super(key: key);
 
   @override
-  State<Class7> createState() => _Class7State();
+  State<Class5> createState() => _Class5State();
 }
 
-class _Class7State extends State<Class7> {
+class _Class5State extends State<Class5> {
   double height = 110;
   double width = 180;
-
   Color backgroundColor = Colors.white;
-  Color appBarColor = Color(0xff43abab);
-  final String _appbarTitle = "Class 7";
+  Color appBarColor = Colors.pink;
+  final String _appbarTitle = "Class 5";
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class _Class7State extends State<Class7> {
           title: Text(_appbarTitle, style: const TextStyle(fontSize: 18)),
         ),
         body: Padding(
-          padding: const EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.only(top: 20, left: 5),
           child: Column(children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

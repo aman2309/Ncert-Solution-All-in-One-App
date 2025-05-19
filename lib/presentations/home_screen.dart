@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../Custom/CustomContainer.dart';
 import '../Custom/CustomDrawer.dart';
 import '../core/theme/my_fonts.dart';
-import 'Classes.dart';
+import 'classes_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 
-import '../Custom/CustomContainer.dart';
+import '../../../Custom/CustomContainer.dart';
+import 'Class10Maths.dart';
 
-class Class6 extends StatefulWidget {
-  const Class6({Key? key}) : super(key: key);
+class Class10 extends StatefulWidget {
+  const Class10({Key? key}) : super(key: key);
 
   @override
-  State<Class6> createState() => _Class6State();
+  State<Class10> createState() => _Class10State();
 }
 
-class _Class6State extends State<Class6> {
+class _Class10State extends State<Class10> {
   double height = 110;
   double width = 180;
 
   Color backgroundColor = Colors.white;
-  Color appBarColor = Color(0xff8f27c7);
-  final String _appbarTitle = "Class 6";
+  Color appBarColor = Color(0xff801c8d);
+  final String _appbarTitle = "Class 10";
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +64,12 @@ class _Class6State extends State<Class6> {
                         text: "English",
                       ),
                       CustomContainer(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Class10Maths()));
+                        },
                         height: height,
                         width: width,
                         image: "assets/images/math.png",
@@ -92,6 +98,24 @@ class _Class6State extends State<Class6> {
                           width: width,
                           image: "assets/images/tr.png",
                           text: "Social Studies",
+                          onTap: () {})
+                    ],
+                  )
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CustomContainer(
+                          height: height,
+                          width: width,
+                          image: "assets/images/pro.png",
+                          text: "Computer",
                           onTap: () {})
                     ],
                   )

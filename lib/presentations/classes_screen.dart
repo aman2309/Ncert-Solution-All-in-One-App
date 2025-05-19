@@ -4,16 +4,17 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../Custom/CustomContainer.dart';
-import '../classes/Class 10/class10.dart';
-import '../classes/Class3/class3.dart';
-import '../classes/class11.dart';
-import '../classes/class12.dart';
-import '../classes/class4.dart';
-import '../classes/class5.dart';
-import '../classes/class6.dart';
-import '../classes/class7.dart';
-import '../classes/class8.dart';
-import '../classes/class9.dart';
+import 'classes/Class 10/class10.dart';
+import 'classes/Class3/class3.dart';
+import 'classes/class11.dart';
+import 'classes/class12.dart';
+import 'classes/class4.dart';
+import 'classes/class5.dart';
+import 'classes/class6.dart';
+import 'classes/class7.dart';
+import 'classes/class8.dart';
+import 'classes/class9.dart';
+
 
 class Classes extends StatefulWidget {
   const Classes({Key? key}) : super(key: key);
